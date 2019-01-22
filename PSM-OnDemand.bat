@@ -1,7 +1,7 @@
 @echo off
 
-set domain=corp.contoso.com
-set psmAddr=psm.corp.contoso.com
+set domain=cyberarkdemo.com
+set psmAddr=components.cyberarkdemo.com
 
 if "%1" == "" goto prompt
 if "%2" == "" goto prompt
@@ -38,8 +38,8 @@ goto end
 
 :prompt
 
-set /p server=Enter the server: 
-set /p adminID=Enter the admin ID: 
+set /p server=Enter the server you want to connect to: 
+set /p adminID=Enter the admin ID [Must be stored in EPV]: 
 set /p connectComp=Enter the connection component [Ex; PSM-RDP]:
 
 :environment
